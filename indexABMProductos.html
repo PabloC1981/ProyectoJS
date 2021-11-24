@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS </title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+<body background= "imagenfondo.jpeg" >
+    <div>
+        <form id="formABprod" class="form-login">        
+    <h5>Alta y Baja de Productos</h5>  
+        <select class="controlsProd " name="tipoPre" id="tipoSelect"> 
+        <option  value="0" disabled selected>Seleccione una opcion</option> <br>
+        <option  value="agregar">Agregar Producto</option>
+        <!--<option  value="modificar">Modificar Producto</option>-->
+        <option  value="eliminar">Eliminar Producto</option>
+        
+        
+    <input class="controlsProd "  id = "id" placeholder="Ingrese el Id del producto" type="text"> <br><br>
+    <input class="controlsProd "  id = "nombre" placeholder="Ingrese el Ingrese el Nombre del producto" type="text">   <br><br>
+    <input class="controlsProd "  id = "precio" placeholder="Ingrese el Ingrese el Precio del producto" type="number"> <br><br>   
+    <input class="controlsProd "  id = "stock" placeholder="Ingrese el Stock del producto" type="number"> <br><br>
+    <button class="buttons" id= "subir" type="submit">CARGAR/ELIMINAR/MODIFICAR PRODUCTO</button>
+        </select>        
+    </form>
+    </div>
+    <script src="CourrouxPabloABMProductos.js"></script>
+</body>
+</html>
