@@ -13,21 +13,26 @@ class Clientes {
         this.password=password
     }  
 }
-
-let check = $('#cargar');
-let btnEnviar = $('.btn');
-
-btnEnviar.click(function(){
-    let name = $('#Name');
-    let email = $('#Email');
-    let password = $('Password')
-    if($(inputName).val().length == "" && $(inputEmail).val().length == "" && $(inputPassword).val().length == ""){
-        alert("Usuario Creado")
+const validarCampos = () => {
+    let name = $('#Name').val();
+    let email = $('#Email').val();
+    let password = $('#Password').val();
+    
+    if(!name || !email || !password){
+        alert("Debe llenar totos los campos.")
+    }else if (password.length < 8){
+        alert("La contraseña debe al menos tener 8 caracteres.");
+    }else if (!$("#cargar").is(":checked")){
+        alert("Debe aceptar los terminos y condiciones");
+    }else{
+        alert("Ususario Creado Correctamente");
         alert("BIENVENIDOS A LAVORO \n Indumentaria Escolar")
-        RegistroDeClientes.push({name,email,password})
-        console.log(RegistroDeClientes)
-        }else{
-            alert("Alguno de los datos es erroneo")
-        }
-    });
-console.log(RegistroDeClientes)
+        RegistroDeClientes.push(new Clientes(name,email,password));
+    }
+}
+
+$('.btn').click(function(e){
+    e.preventDefault();
+    validarCampos();
+    console.log(RegistroDeClientes)
+})
