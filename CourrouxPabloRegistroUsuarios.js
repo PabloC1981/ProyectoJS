@@ -27,6 +27,7 @@ const validarCampos = () => {
     }else{
         alert("Ususario Creado Correctamente");
         alert("BIENVENIDOS A LAVORO \n Indumentaria Escolar")
+        $("#formABprod")[0].reset();
         RegistroDeClientes.push(new Clientes(name,email,password));
     }
 }
