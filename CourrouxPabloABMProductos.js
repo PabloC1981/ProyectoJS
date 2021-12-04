@@ -40,6 +40,7 @@ function AgregarProducto(){
     } 
 }
 const producto = RegistroDeProductos
+
 console.log(producto)
 
 

@@ -13,6 +13,16 @@ class Clientes {
         this.password=password
     }  
 }
+
+/*$("#abrirRegistro").click(function(){
+		if($("#formABprod").is(':hidden'))
+		{
+			$("#formABprod").slideDown(600);
+		}
+		else
+            $("#formABprod").slideUp(600);
+			
+	});*/
 const validarCampos = () => {
     let name = $('#Name').val();
     let email = $('#Email').val();
@@ -29,11 +39,14 @@ const validarCampos = () => {
         alert("BIENVENIDOS A LAVORO \n Indumentaria Escolar")
         $("#formABprod")[0].reset();
         RegistroDeClientes.push(new Clientes(name,email,password));
+        $("#formABprod").slideUp(600);
     }
 }
 
 $('.btn').click(function(e){
     e.preventDefault();
     validarCampos();
+    $("#formABprod").slideDown(600);
+    location.href = "indexLoginABMProductos.html"
     console.log(RegistroDeClientes)
 })

@@ -8,9 +8,11 @@ class AltaUsuarios {
     this.surname=surname
     this.password=password
     }   
-}                            
+}     
+
 alert("Usted a Ingresado a un Sector Restringido \nTendra 3 intentos para ingresar correctamente\nDe ser invalidos su Usuario se bloqueará")   
     //Estado Inicial: No autorizado y 3 Intentos
+    
 const btnlogin = document.getElementById('login')
 btnlogin.onclick = (e) =>{
     e.preventDefault();
@@ -19,7 +21,7 @@ btnlogin.onclick = (e) =>{
 let chances = 3
 let findUser = false
 function Login(){
-    
+    $("#formLogin").slideDown(600);
     let name = document.getElementById('name').value;
     let surname = document.getElementById('surname').value;
     let password = document.getElementById('password').value;
