@@ -32,6 +32,8 @@ const validarCampos = () => {
         alert("Debe llenar totos los campos.")
     }else if (password.length < 8){
         alert("La contraseña debe al menos tener 8 caracteres.");
+    }else if ($("#Email").val().indexOf('@', 0) == -1 || $("#Email").val().indexOf('.', 0) == -1){
+        alert('El correo electrónico introducido no es correcto. El formato es ejemplo@gmail.com');
     }else if (!$("#cargar").is(":checked")){
         alert("Debe aceptar los terminos y condiciones");
     }else{
@@ -39,7 +41,8 @@ const validarCampos = () => {
         alert("BIENVENIDOS A LAVORO \n Indumentaria Escolar")
         $("#formABprod")[0].reset();
         RegistroDeClientes.push(new Clientes(name,email,password));
-        $("#formABprod").slideUp(600);
+        $("#formABprod").slideUp(800);
+        //location.href = "indexLoginABMProductos.html"
     }
 }
 
@@ -47,6 +50,5 @@ $('.btn').click(function(e){
     e.preventDefault();
     validarCampos();
     $("#formABprod").slideDown(600);
-    location.href = "indexLoginABMProductos.html"
     console.log(RegistroDeClientes)
 })

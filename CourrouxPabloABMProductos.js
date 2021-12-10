@@ -1,4 +1,4 @@
-let RegistroDeProductos =  [{id:"1" , name:"Chomba Jesus Maria", price:"699", stock:"10" },
+let RegistroDeProductos =  [{id:"1" , name:"Chomba Jesus Maria", price:"1999", stock:"10" },
                             {id:"2" , name:"Pantalo Jesus Maria", price:"1999", stock:"10" },
                             {id:"3" , name:"Pollera Jesus Maria", price:"1599", stock:"10" }];
 
@@ -14,7 +14,21 @@ const btnProd = document.getElementById('subir')
 btnProd.onclick = (e) =>{
     e.preventDefault();
     AgregarProducto()
-}
+};
+$('#ver').on('click',(e)=>{
+    $.get('productos.json',(consulta,status)=>{
+    console.log(consulta)
+        if (status === 'success') {
+        consulta.forEach((post) => {
+        $('.container').append(`<div style="margin:50px 0px">
+        <h1>${post.name}</h1>
+        <h1>${post.price}</h1>
+        <h1>${post.stock}</h1>
+        </div>`);
+            });
+        }
+    });
+});
 
 function AgregarProducto(){
 
@@ -40,6 +54,7 @@ function AgregarProducto(){
     } 
 }
 const producto = RegistroDeProductos
+
 
 console.log(producto)
 
