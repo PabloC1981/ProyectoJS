@@ -1,141 +1,700 @@
+/*media (max-width: 375px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-left: 2vw;
+  }
+  header h1 img {
+    width: 30vw;
+  }
+  header nav ul {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  header .hamburguesa {
+    display: block;
+    margin-right: 5vw;
+  }
+  main .iniciar {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  main .iniciar article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+  }
+  main .iniciar article h2 {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  main .iniciar p {
+    color: #b3b2b7;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .iniciar button {
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 10vh;
+    cursor: pointer;
+  }
+  .graficos {
+    width: 100vw;
+    margin-bottom: 5vh;
+  }
+  .ventajas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  main .ventajas .manage {
+    width: 100%;
+  }
+  main .ventajas .manage h3 {
+    text-align: center;
+    font-size: 2.1rem;
+  }
+  main .ventajas .manage p {
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-left: 1.5vw;
+    color: #b9b9c1;
+  }
+  .listado{
+    margin-left: 3vw;
+  }
+  .listado div {
+    height: 100%;
+  }
+  main .ventajas .listado {
+    width: 100%;
+  }
+  main .ventajas .listado div h5 {
+    font-size: 1rem;
+    background-color: pink;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 100vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  main .ventajas .listado div p {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.8rem;
+    padding-bottom: 0vh;
+  }
+  main .perfiles {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  main .perfiles h4 {
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+  }
+  main .perfiles div article:nth-child(1) {
+    display: none;
+  }
+  main .perfiles div article:nth-child(3) {
+    display: none;
+  }
+  main .perfiles div article:nth-child(2) {
+    width: 100%;
+  }
+  main .perfiles div article span {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  main .perfiles div article p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  main .perfiles div article img {
+    width: 20vw;
+  }
+  .perfiles button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 28px;
+    cursor: pointer;
+  }
+  main .simplify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .simplify h3 {
+    text-align: center;
+    width: 100vw;
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 70vw;
+  }
+  footer {
+    width: 100vw;
+    position: relative;
+  }
+  footer section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer section .redes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .redes .iconos{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+  }
+  .redes .iconos img {
+    width: 8vw;
+  }
+  .copyright1 {
+    display: none;
+  }
+  .copyright {
+    display: block;
+    position: absolute;
+    color: #8C8C94;
+    bottom:10px;
+    font-size: 0.8rem;
+  }
+  .linksnav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mobile2 {
+    padding-top: 0.5vh;
+    display: initial;
+    line-height: 4vh;
+  }
+  .desktop {
+    display: none;
+  }
+  button[type="submit"] {
+    margin-left: 4vw;
+}
+}*/
 .number{
-    color: blue;
-    }
+  color: blue;
+  }
 h3 {
-    color: red;
-    }
+  color: red;
+  }
 #quedan{
-    color: green
+  color: green
 }
 .card {
-    background-color: lightgrey;
-    margin: 1vh;
-    height:200px;
-    width:200px;
-    border-radius: 10px;
-    }
+  background-color: lightgrey;
+  margin: 1vh;
+  height:200px;
+  width:200px;
+  border-radius: 10px;
+  }
 div{
-   padding: 10px;
+ padding: 10px;
 }
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: arial;
-    
-  }
-  
-  .form-login {
-    width: 300px;
-    height: 450px;
-    background: #4e4d4d;
-    margin-left: auto;
-    margin-top: 10px;
-    box-shadow: 7px 13px 37px #000;
-    padding: 20px 30px;
-    border-top: 4px solid #017bab;
-    color: white;
-    
-  }
-  
-  .form-login h5 {
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid;
-    font-size: 20px;
-  }
-  
-  .controlsProd {
-    width: 100%;
-    border: 1px solid #017bab;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    background: #252323;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .buttons {
-    width: 100%;
-    height: 40px;
-    background: #017bab;
-    border: none;
-    color: white;
-    margin-bottom: 16px;
-  }
-  
-  .form-login p{
-    height: 40px;
-    text-align: center;
-    border-bottom: 1px solid;
-  }
-  
-  .form-login a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .form-login a:hover {
-    text-decoration: underline;
-  }
-  .form-productos {
-    width: 350px;
-    height: 450px;
-    background: #4e4d4d;
-    margin: auto;
-    margin-top: 50px;
-    box-shadow: 7px 13px 37px #000;
-    padding: 20px 30px;
-    border-top: 4px solid #017bab;
-    color: rgb(189, 52, 52);
-  }
-  .controlsProd {
-    width: 100%;
-    border: 1px solid #017bab;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    background: #da1212;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .validacion-input{
-    color:tomato;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.respuesta{
-    color:rgb(108, 154, 16);
-    padding-left:30px;
+body {
+  font-family: arial;
+  
 }
-.form-registro {
+
+.form-login {
+  width: 300px;
+  height: 450px;
+  background: #4e4d4d;
+  margin-left: auto;
+  margin-top: 10px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  border-top: 4px solid #017bab;
+  color: rgb(139, 133, 133);
+  
+}
+
+.form-login h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+
+.controlsProd {
+  width: 100%;
+  border: 1px solid #017bab;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: #252323;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buttons {
+  width: 100%;
+  height: 40px;
+  background: #017bab;
+  border: none;
+  color: rgb(29, 27, 27);
+  margin-bottom: 16px;
+}
+
+.form-login p{
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.form-login a {
+  color: rgb(29, 27, 27);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-login a:hover {
+  text-decoration: underline;
+}
+.form-productos {
   width: 350px;
-  height: 580px;
+  height: 450px;
   background: #4e4d4d;
   margin: auto;
   margin-top: 50px;
   box-shadow: 7px 13px 37px #000;
   padding: 20px 30px;
   border-top: 4px solid #017bab;
-  color: white;
-  
+  color: rgb(189, 52, 52);
 }
-.controls-registro {
+.controlsProd {
   width: 100%;
   border: 1px solid #017bab;
   margin-bottom: 5px;
   padding: 5px 10px;
   background: #da1212;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
+.validacion-input{
+  color:tomato;
+}
+
+.respuesta{
+  color:rgb(108, 154, 16);
+  padding-left:30px;
+}
+.form-registro {
+width: 350px;
+height: 580px;
+background: #4e4d4d;
+margin: auto;
+margin-top: 50px;
+box-shadow: 7px 13px 37px #000;
+padding: 20px 30px;
+border-top: 4px solid #017bab;
+color: white;
+
+}
+.controls-registro {
+width: 100%;
+border: 1px solid #017bab;
+margin-bottom: 5px;
+padding: 5px 10px;
+background: #da1212;
+font-size: 12px;
+font-weight: bold;
+}
 body {
-  background-image: "imagenfondo.jpeg";
-  background-repeat: repeat-y;
-  width: 100%;
-  }
-  
+background-image: "imagenfondo.jpeg";
+background-repeat: repeat-y;
+width: 100%;
+}
+.producto-card{
+  width:300px;
+  height:350px;
+  padding:15px 10px;
+  border:1px solid black;
+  margin:10px 5px;
+  border-radius:10px;
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+  line-height: 5px;
+  font-weight: bold;
+}
+.producto-container{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto:wght@100&display=swap");
+* {
+box-sizing: border-box;
+margin: 0px;
+}
+html {
+font-size: 15.5;
+}
+body {
+font-family: "Be Vietnam Pro", sans-serif;
+width: 100vw;
+}
+header {
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100vw;
+height: 16vh;
+}
+header h1 img{
+width: 8vw;
+height: 4vh;
+border-radius: 6px;
+text-align: center;
+
+}
+
+header nav ul {
+display: flex;
+flex-direction: row;
+align-items: center;
+list-style-type: none;
+}
+header nav ul li {
+padding-left: 28px;
+color: #242e52;
+}
+a {
+text-decoration: none;
+}
+header button {
+color: white;
+background-color: #f3603b;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+border: none;
+border-radius: 50px;
+padding: 12.5px 30.5px;
+font-weight: 500px;
+cursor: pointer;
+}
+header .hamburguesa {
+display: none;
+}
+main .iniciar {
+display: flex;
+justify-content: space-around;
+width: 100vw;
+padding-left: 4vw;
+padding-right: 3vw;
+margin-bottom: 15vh;
+}
+main .iniciar article {
+width: 35vw;
+margin-top: 185px;
+}
+h2 {
+font-size: 3.3rem;
+font-weight: 700;
+color: #232c50;
+line-height: 65px;
+}
+.iniciar p {
+font-size: 1.2rem;
+line-height: 1.5rem;
+padding-top: 28px;
+}
+.iniciar img {
+margin-top: 114px;
+}
+.iniciar button {
+color: white;
+background-color: #f3603b;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+border: none;
+border-radius: 50px;
+padding: 12.5px 30.5px;
+font-weight: 500;
+margin-top: 28px;
+cursor: pointer;
+}
+main .ventajas {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: flex-start;
+width: 100vw;
+margin-bottom: 50vh;
+}
+.ventajas .manage {
+display: flex;
+flex-direction: column;
+align-self: flex-start;
+width: 30vw;
+}
+.ventajas .manage h3 {
+font-size: 2.3rem;
+font-weight: 700;
+line-height: 2.5rem;
+padding-bottom: 36px;
+color: #232851;
+}
+.ventajas .manage p {
+font-size: 1rem;
+line-height: 1.5rem;
+font-weight: 500;
+text-align: left;
+}
+main .listado {
+margin-top: 9vh;
+display: flex;
+flex-direction: row;
+width: 30vw;
+}
+
+.listado div {
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+align-items: flex-start;
+height: 45vh;
+}
+
+.listado h5 {
+font-size: 1rem;
+font-weight: 700;
+}
+.listado h5:nth-child(1)::before {
+content: "01";
+background-color: #f3603b;
+color: white;
+padding: 10px 25px;
+border-radius: 30px;
+margin-right: 2vw;
+}
+.listado h5:nth-child(3)::before {
+content: "02";
+background-color: #f3603b;
+color: white;
+padding: 10px 25px;
+border-radius: 30px;
+margin-right: 2vw;
+}
+.listado h5:nth-child(5)::before {
+content: "03";
+background-color: #f3603b;
+color: white;
+padding: 10px 25px;
+border-radius: 30px;
+margin-right: 2vw;
+}
+.listado p {
+color: #b3b2b7;
+padding: 18px 0 42px;
+margin-left: 7vw;
+text-align: justify;
+}
+main .perfiles {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 40vh;
+height: 42vh;
+}
+main .perfiles h4 {
+color: #242e53;
+font-size: 2.5rem;
+font-weight: 700;
+padding-bottom: 15vh;
+}
+main .perfiles div {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+width: 100vw;
+}
+main .perfiles div article {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+width: 30vw;
+background-color: #fafafa;
+}
+main .perfiles div article img {
+position: relative;
+bottom: 4vh;
+}
+main .perfiles div article span {
+color: #3f4868;
+font-size: 1rem;
+font-weight: 700;
+padding-bottom: 3vh;
+}
+main .perfiles div article p {
+color: #b9b9c1;
+text-align: center;
+padding-right: 5vw;
+padding-left: 5vw;
+padding-bottom: 5vh;
+}
+main .perfiles button {
+color: white;
+background-color: #f3603b;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+border: none;
+border-radius: 50px;
+padding: 12.5px 30.5px;
+font-weight: 500;
+margin-top: 5vh;
+margin-bottom: 50vh;
+cursor: pointer;
+}
+.simplify {
+background-color: #f3613c;
+display: flex;
+justify-content: space-between;
+padding-top: 6vh;
+padding-bottom: 6vh;
+padding-left: 11vw;
+padding-right: 14vw;
+font-size: 1.5rem;
+align-items: center;
+}
+.simplify h3 {
+width: 33vw;
+color: white;
+font-size: 2.5rem;
+font-weight: 700;
+}
+.simplify button {
+color: #f3603b;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+background-color: white;
+border: none;
+border-radius: 50px;
+padding: 12.5px 30.5px;
+font-weight: 500;
+margin-top: 28px;
+cursor: pointer;
+margin-bottom: 2.5vh;
+}
+footer section {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-color: #1e1e26;
+padding-top: 3vh;
+padding-bottom: 3vh;
+}
+footer section .redes {
+height: 16vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+footer section .redes div {
+cursor: pointer;
+}
+footer section .redes div :hover {
+background-color: #f3603b;
+}
+footer section .redes .iconos a {
+padding-left:1vw;
+}
+footer section nav ul {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: 16vh;
+list-style-type: none;
+}
+footer section nav ul li a {
+color: white;
+font-size: 1rem;
+font-weight: 400;
+}
+footer section nav ul li :hover {
+color: #f3603b;
+}
+.mobile2 {
+display: none;
+}
+.desktop{
+padding-bottom:2vh;
+}
+footer section .formulario {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+height: 18vh;
+}
+footer section .formulario p {
+margin-left: 10px;
+font-size: 0.8rem;
+color: #8c8c94;
+padding-top: 3vw;
+padding-left: 2vw;
+}
+footer section .formulario form .correo {
+display: flex;
+}
+input[type="email"] {
+border-radius: 50px;
+border: none;
+padding: 15px;
+text-align: center;
+margin-right: 1vw;
+}
+buttonL[type="submit"] {
+border-radius: 50px;
+padding: 15px 25px;
+background-color: #f3603b;
+cursor: pointer;
+color: white;
+border: none;
+font-size: 0.8rem;
+font-weight: 500;
+}
+.copyright {
+display: none;
+}

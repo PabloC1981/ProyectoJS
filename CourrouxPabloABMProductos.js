@@ -16,11 +16,13 @@ btnProd.onclick = (e) =>{
     AgregarProducto()
 };
 $('#ver').on('click',(e)=>{
+    e.preventDefault();
     $.get('productos.json',(consulta,status)=>{
-    console.log(consulta)
+        
+        console.log(consulta)
         if (status === 'success') {
         consulta.forEach((post) => {
-        $('.container').append(`<div style="margin:50px 0px">
+        $('#container').append(`<div style="margin:50px 0px">
         <h1>${post.name}</h1>
         <h1>${post.price}</h1>
         <h1>${post.stock}</h1>
@@ -56,6 +58,6 @@ function AgregarProducto(){
 const producto = RegistroDeProductos
 
 
-console.log(producto)
+//console.log(producto)
 
 
