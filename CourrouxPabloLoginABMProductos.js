@@ -1,3 +1,7 @@
+///////////////
+/// USUARIOS///
+//AUTORIZADOS//
+////////////// 
 let  UsuariosAutorizados =  [{name:"pablo" , surname:"perez", password:"qwerty"},
                             {name:"belen" , surname:"sanchez", password:"qwerty"}]
 

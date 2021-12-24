@@ -1,9 +1,4 @@
-//SIMULADOR DE VENTA DE INDUMENTARIA ESCOLAR
-/*let  name= prompt('Ingrese Su Nombre').toUpperCase();
-let surname = prompt('Ingrese Su Apellido ').toUpperCase();
-let cellphone = prompt('Ingrese Su Numero Celular');
-let password = prompt('Ingrese Su Contaseña \n Debe Tenes Entre 5 y 8 Caracteres');
-let password1= prompt('Reitere la Contraseña');*/
+
 let RegistroDeClientes = [];
 //CLASE CLIENTES PARA GENERAR USUARIOS
 class Clientes {
