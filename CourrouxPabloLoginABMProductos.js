@@ -45,23 +45,6 @@ function Login(){
         window.location.href="indexABMProductos.html"    
     }
 }
-$('#ejecutar').on('click', (e) => {
-        $.get('productos.Json', (respuesta, status) => {
-            if (status === 'success') {
-                respuesta.forEach((post) => {
-                    $('.container').append(`<div style="margin:50px 0px">
-                    <h1>${post.id}</h1>
-                    <h1>${post.name}</h1>
-                    <h1>${post.price}</h1>
-                    <h1>${post.stock}</h1>
-                    </div>`);
-                });
-            }
-        });
-    });
-    
-    $('#limpiar').on('click', (e) => {
-        $('.container').empty();
-    });
+
 
     

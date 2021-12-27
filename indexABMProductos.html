@@ -4,31 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCTOS </title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <title>CARGA PRODUCTOS</title>
 </head>
-<body background="./img/lavoro-1.jpg">
-    <div>
-        <form id="formABprod" class="form-login">        
+<body >
+    <header>
+        <h1>
+            <a type="button"  href="Home.html"><img src="./img/lavoro-1.jpg" alt="logomanage"></a>
+        </h1>
+        <nav>
+             <ul>
+                 <li><a href="#">Ofertas</a></li>
+                 <li><a href="indexProductos.html">Poductos</a></li>
+                
+             </ul>
+        </nav>
+        
+    </header>
+    <div class = 'container'>
+        
+    <form id="formABprod" class="form-login">        
     <h5>Alta y Baja de Productos</h5>  
-        <select class="controlsProd " name="tipoPre" id="tipoSelect"> 
-        <option  value="0" disabled selected>Seleccione una opcion</option> <br>
+    <select class="controls " name="tipoPre" id="tipoSelect"><br><br>
+        <option  value="0" disabled selected>Seleccione una opcion</option> 
         <option  value="agregar">Agregar Producto</option>
         <!--<option  value="modificar">Modificar Producto</option>-->
-        <option  value="eliminar">Eliminar Producto</option>   
-    <input class="controlsProd "  id = "id" placeholder="Ingrese el Id del producto" type="text"> <br><br>
-    <input class="controlsProd "  id = "nombre" placeholder="Ingrese el Ingrese el Nombre del producto" type="text">   <br><br>
-    <input class="controlsProd "  id = "precio" placeholder="Ingrese el Ingrese el Precio del producto" type="number"> <br><br>   
-    <input class="controlsProd "  id = "stock" placeholder="Ingrese el Stock del producto" type="number"> <br><br>
-    <button class="buttons" id= "subir" type="submit">CARGAR/ELIMINAR/MODIFICAR PRODUCTO</button>
-    <button class="buttons" id= "ver">VER PRODUCTOS JSON</button>
-
-    <div id= "container" ></div>  
-
-</select>        
-    </form>
+        <option  value="eliminar">Eliminar Producto</option>
+       
+    <input class="controls "  id = "id" placeholder="Ingrese el Id del producto" type="text"> <br><br>
+    <input class="controls "  id = "nombre" placeholder="Ingrese el Nombre del producto" type="text">   <br><br>
+    <input class="controls "  id = "precio" placeholder="Ingrese el Precio del producto" type="number"> <br><br>   
+    <input class="controls "  id = "stock" placeholder="Ingrese el Stock del producto" type="number"> <br><br>
+    <button class="buttonsL" id= "subir" type="submit">Cargar/Eliminar Producto</button>
+    <button class="buttonsL" id= "ver">Ver Productos</button>
+</select>
+            
+        </form>
     </div>
+    <div class="row" id="divProductos" ></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="CourrouxPabloABMProductos.js"></script>
+    
+    
 </body>
 </html>

@@ -15,22 +15,7 @@ btnProd.onclick = (e) =>{
     e.preventDefault();
     AgregarProducto()
 };
-$('#ver').on('click',(e)=>{
-    e.preventDefault();
-    $.get('productos.json',(consulta,status)=>{
-        
-        console.log(consulta)
-        if (status === 'success') {
-        consulta.forEach((post) => {
-        $('#container').append(`<div style="margin:50px 0px">
-        <h1>${post.name}</h1>
-        <h1>${post.price}</h1>
-        <h1>${post.stock}</h1>
-        </div>`);
-            });
-        }
-    });
-});
+
 
 function AgregarProducto(){
 
@@ -44,20 +29,46 @@ function AgregarProducto(){
         let nuevoProducto = new Productos (id,name,price,stock)
         RegistroDeProductos.push(nuevoProducto)
         document.getElementById("formABprod").reset();
+        const producto =  JSON.stringify(RegistroDeProductos)
+        console.log(producto)
         localStorage.setItem('Productos', JSON.stringify(RegistroDeProductos)); //guardo mis Productos en el storage
     }else if(selectABM === "eliminar"){
         let id = document.getElementById('id').value;
-        let name = document.getElementById('nombre').value;
-        let price = document.getElementById('precio').value;
-        let stock = document.getElementById('stock').value;
         let indexProducto = RegistroDeProductos.findIndex(producto => producto.id === id)
-        RegistroDeProductos.splice(indexProducto, 1)
-        
+        let producto = RegistroDeProductos.splice(indexProducto, 1)
+        console.log(producto)
+        console.log(RegistroDeProductos)
     } 
 }
-const producto = RegistroDeProductos
 
+$('#ver').on('click',(e)=>{
+    e.preventDefault();
+let divProductos= document.getElementById("divProductos")
 
-//console.log(producto)
+fetch('productos.json')
+    .then(response => response.json())
+    .then(datosProductos=>{
+        datosProductos.forEach(producto =>{
+            divProductos.innerHTML += `
+                <div class="card border-primary mb-5" id="producto${producto.id + 1}" style="max-width: 18rem">
+                    <img src="../img/${producto.img}" class="card-img-top" alt="${producto}">
+                    <div class="card-body">
+                        <p class="card-text">${producto.name}</p>
+                        <h5 class="card-title">${producto.price}</h5>
+                        <p class="card-text">stock:  ${producto.stock}</p>
+                        <div class="cardButton">
+                            <button class="btn btn-dark" id="boton${producto.id}"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            `
+    })
 
+})
+.catch(error=> console.error(error))
+$('#limpiar').on('click', (e) => {
+    $('.container').empty();
+});
+
+})
 

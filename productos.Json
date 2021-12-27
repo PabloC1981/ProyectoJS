@@ -1,14 +1,26 @@
 [
 {"id":"1" , 
  "name":"Chomba Jesus Maria", 
- "price": 699, 
- "stock": 10 },
+ "price": "$699", 
+ "stock": 10 ,
+ "img": "ChombaJM.jpeg"
+},
 {"id":"2", 
- "name":"Pantalon Jesus Maria",
- "price":1999, 
- "stock":10 },
+ "name":"Pollera Jesus Maria",
+ "price":"$1999", 
+ "stock":10, 
+ "img": "PolleraJM.jpeg"
+},
 {"id":"3",
- "name":"Pantalon Jesus Maria", 
- "price":1599, 
- "stock":10 }
+ "name":"BuzoLoreto.jpeg", 
+ "price":"$2100", 
+ "stock":10,
+ "img": "BuzoLoreto.jpeg" 
+},
+{"id":"4",
+    "name":"Chomba Loreto", 
+    "price":"$1599", 
+    "stock":10,
+    "img": "ChombaLoreto.jpeg" 
+}
 ]

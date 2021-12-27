@@ -7,30 +7,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
-    <title>LAVORO INDUMENTARIA ESCOLAR</title>
+    <title>REGISTRATE</title>
 </head>
-<body background="./img/kisspng-national-primary-school-school-uniform-student-edu-school-uniform-png-hd-youville-org-5d0a4764d9d4b6.1722196215609547248922.png" >
-    
-    <form id="formABprod" class="form-registro">    
-    <div class= "controls-registro">
-        <div class="container p-5">
-            <div class="mb-3 div-validacion-name">
-            <label for="Name" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="Name">
+<body background="./img/registro.jpeg" >
+    <header>
+        <h1>
+            <a type="button"  href="Home.html"><img src="./img/lavoro-1.jpg" alt="logomanage"></a>
+        </h1>
+        <nav>
+             <ul>
+                 <li><a href="#">Ofertas</a></li>
+                 <li><a href="indexProductos.html">Poductos</a></li>
+                 <li><a href="#">Nuestra Historia</a></li>
+                 <li><a href="indexRegistrosUsuarios.html">Registrate</a></li>
+                
+             </ul>
+        </nav>
+        <button><a href="./indexLoginABMProductos.html">Login</a></button>
+        
+    </header>
+    <form id="formABprod" class="form-login">    
+                <h5>Registrate</h5>
+                <input type="text" class="controls" id="Name" placeholder="Ingrese su Nombre"> <br><br>   
+                <input type="email" class="controls" id="Email" aria-describedby="emailHelp" placeholder="Email"><br><br>
+                <input type="password" class="controls" id="Password" aria-describedby="emailHelp" placeholder="Password"><br><br>
+                <input type="checkbox" class="form-check-input" id="cargar">
+            <p><label class="form-check-label" for="exampleCheck1">Aceptar términos y condiciones</label><br><br>
             </div>
-            <div class="mb-3 div-validacion-email">
-                <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3 div-validacion-password">
-                <label for="Password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="Password" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3 form-check div-validacion-check">
-            <input type="checkbox" class="form-check-input" id="cargar">
-            <label class="form-check-label" for="exampleCheck1">Aceptar términos y condiciones</label>
-            </div>
-            <button type="btn" class="btn btn-primary">Enviar</button>
+            <button type="btn" class="buttonsL">Enviar</button>
         </div>
         <div class="respuesta container">
         </div>    
